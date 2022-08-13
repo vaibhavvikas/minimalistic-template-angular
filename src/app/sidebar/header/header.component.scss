@@ -1,0 +1,27 @@
+.addr a:hover, a:focus {
+  color: var(--clr-a-text-hvr);
+}
+
+@media print, screen and (max-width: 720px) {
+  :host {
+    padding: 0;
+    overflow-x: hidden;
+    float: none;
+    position: static;
+    width: auto;
+    overflow-x: hidden;
+  }
+
+  :host ul, :host p.view {
+    position: static;
+  }
+  
+  :host a small {
+    display: inline;
+  }
+
+  :host ul {
+    right: 50px;
+    top: 52px;
+  }
+}
